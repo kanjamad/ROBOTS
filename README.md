@@ -43,6 +43,11 @@ Used a radial gradient to glowy laser eyes.
 By default a round gradient wants to be centered in the HTML element that cintains it. Will use that, and also use background-size to colorl how many times and where it appears in the shape.
 
 5. An antenna
+I am going to call it antenna though. Class name beep
+The CSS for the antenna is similar to the CSS for the torso shape. An extra border gives it that hourglass shape.
+First, just going to flesh out thr basics of the antenna's size, style and color.
+Adding a transparent left and right border will give the antenna a trapezoid shape like the torso.
+But when I add a top border, something pretty neat happens!
 
 
 
