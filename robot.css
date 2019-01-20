@@ -1,0 +1,71 @@
+div {
+    margin: 0 auto;
+  }
+
+/* ################ Build An antenna ############################## */ 
+  .beep{
+    width: 5px;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 10px solid #777;
+    border-bottom: 80px solid #888;
+  }
+
+/* ################ Build robot ############################## */  
+  .brain{
+    /* background: radial-gradient(shape, centercolor, outercolor); shape=> can be circle or ellipse   color=> can include a numerical callour to size(pixels or percent) */
+    background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
+    background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5; 
+    background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+    /* The syntax background-size: width hight; */
+    background-size: 30% 100%; /*The gradient, in the normal flow of the page, want to be centered in the background. I am going to use background-size to trick it into thinking the background isn't 150x150 pixels. I want 2 gradients, so will make it haft that size. Actually want the gradient to think it's only half the width, but still the full 150px height. */
+    height: 150px;
+    width: 150px;
+    border-radius: 60px 60px 10px 10px;
+    border-bottom: 40px double #666; /*Giving only one side of the shape a contrasting border.*/
+  }
+
+  /* The basic trapezoidal shape of robot's torso: It's almost exactly the CSS to make a troangle, 
+  except it has a width value  greater than zero */
+  .torso {
+    height: 0;
+    width: 140px;
+    border-top: 300px solid #bc6;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent; 
+ }
+
+  .foot{
+    height: 40px;
+    width: 40px;
+    background: #ccc;
+    /* use border radius to create circles, ovals, bullet or egg shapes:pretty much any thing with some curve to it. */
+    /* remenber sytex => margin: top right bottom left;  and padding: top right bottom left;*/
+    /* very similar clockwise callout for declaring more than one div{ border-radius: topleft topright bottomright bottomleft}*/
+    /* wanted all 4 sides of element to have the same padding or margin, had to declare that pixel value once. */
+    /* The same shortcut work when all 4 radii will have the same value */
+    /* If give all 4 corners the exact same border-radius, will get a circle */
+    /* To create a perfectly circular curve, make the radius at least half the length of yhe shape's edge */
+    border-radius: 40px;
+    /* The wheel doesn't look done yet. Let's revisit the border property */
+    /* like a <div> a border needs to define 3 attrinutes to become visible. */
+    /* Give a thick, solid border that is darker than the center of the wheel */
+    /* border: width style color; (styles can be => solid, dashed, dotted or double.) */
+    border: 15px solid #999;
+  }
+
+
+
+
+
+/* ################ Example Triangle ############################## */
+/* Here'a CSS triangle.The .triangle div has no width, no height, no background color, so it shouldn't be visible.*/
+/* But there is width, style and color on its bottom border */ 
+  /* .triangle {
+      height: 0;
+      width: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red; 
+  } */
+
