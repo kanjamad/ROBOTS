@@ -1,6 +1,17 @@
-div {
+/* div {
     margin: 0 auto;
   }
+  I need to animate the robot!, it has to be free to come and go  rool around the screen
+  So, it's time to take the training wheels off */
+
+
+/* ################ Want to move the robot around on the screen ############################## */ 
+  /* Make a .robot class with a position declaration that will push the entrie Cotbot over 200 pixels to the right.  */
+  .robot {
+    position: relative;
+    left: 200px;
+  }
+
 
 /* ################ Build An antenna ############################## */ 
   .beep{
@@ -9,6 +20,8 @@ div {
     border: 5px solid transparent;
     border-top: 10px solid #777;
     border-bottom: 80px solid #888;
+    position: relative; /* relatively positioned, I can now tell it; go 70px away from the left side. That pushes it 70 pixels to the right.*/
+    left: 140px;
   }
 
 /* ################ Build robot ############################## */  
@@ -23,6 +36,8 @@ div {
     width: 150px;
     border-radius: 60px 60px 10px 10px;
     border-bottom: 40px double #666; /*Giving only one side of the shape a contrasting border.*/
+    position: relative;
+    left: 70px;
   }
 
   /* The basic trapezoidal shape of robot's torso: It's almost exactly the CSS to make a troangle, 
@@ -52,6 +67,10 @@ div {
     /* Give a thick, solid border that is darker than the center of the wheel */
     /* border: width style color; (styles can be => solid, dashed, dotted or double.) */
     border: 15px solid #999;
+    position: relative;
+    left: 110px;
+    top: -10px; /* A negative top value moves things up, toward the top of the page, by the specified number of pixels.*/
+    z-index: -1; /*If I want somthing to go behind my main working layer, give it a negtive value.If I want it in front, give it a number greater than zero.*/
   }
 
 
