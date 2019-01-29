@@ -102,3 +102,5 @@ Want to move the robot around on the screen
 
 
 Arming the Cotbot
+I could build the cotbot's arms with CSS shapes, but have other way easier tool that will give me the general shape of hands and shoulders.
+Specifcally by the lowercase letter j as styled with css and rendered in a google web font. https://fonts.google.com/specimen/Poller+One?selection.family=Poller+One

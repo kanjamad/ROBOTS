@@ -48,7 +48,40 @@
     border-top: 300px solid #bc6;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent; 
- }
+  }
+
+  /* style arm */
+  .left {
+    font-family: 'Poller One', verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 250px;
+    color: #666;
+    /* transform :Get angle of the arm corret.This is CSS property   */
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    /* will use negative pixel values to push it up and left to connect it to the robot's body */
+    position: relative;
+    top: -320px;
+    left: -190px;
+    /* let's z-index that arm into place. */
+    z-index: -1;
+  }
+
+  .right {
+    font-family: 'Poller One', verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 250px;
+    color: #666;
+    /* scaleY: this finds the center of the element, and flips it along the Y axis.*/
+    transform: scaleY(-1) rotate(20deg);
+    -webkit-transform: scaleY(-1) rotate(20deg);
+    -moz-transform: scaleY(-1) rotate(20deg);
+    position: relative;
+    top: -620px;
+    left: 190px;
+    z-index: -1;
+  }
 
   .foot{
     height: 40px;
