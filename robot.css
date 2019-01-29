@@ -9,7 +9,7 @@
   /* Make a .robot class with a position declaration that will push the entrie Cotbot over 200 pixels to the right.  */
   .robot {
     position: relative;
-    left: 200px;
+    left: 700px;
   }
 
 
