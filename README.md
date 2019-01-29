@@ -14,7 +14,7 @@ To make an empty <div> visible , three things have to happen:
 I'm not going to put anything in there <div> be cause I'll use them to build a robot!
 Every shape in this robot is a shape that can create with nothing but a little bit of HTML and CSS.
 
-This robot is made of 60 lines of CSS and about 25 lines of HTML.
+This robot is made from CSS and HTML.
 * Use JavaScript to activate the tricking laserbeams in its head.
 
 2. Inventing the Wheel
@@ -101,6 +101,13 @@ Want to move the robot around on the screen
 * and wrap it around the four other div that are robot pieces.
 
 
-Arming the Cotbot
+Arming the Cotbot:
 I could build the cotbot's arms with CSS shapes, but have other way easier tool that will give me the general shape of hands and shoulders.
 Specifcally by the lowercase letter j as styled with css and rendered in a google web font. https://fonts.google.com/specimen/Poller+One?selection.family=Poller+One
+
+Blink :
+So, will use CSS animation(need to define and need to assign it) that will make it look like laser beams are shooting out of the Cotbot's eyes!
+And will animating .brain, to change the color of the eye gradient ehich is part of the background property.
+
+
+

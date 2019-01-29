@@ -24,8 +24,30 @@
     left: 140px;
   }
 
+  /* ################ Blink ############################## */ 
+  /* 50% of the way though the animation, the color changes from white to red. */
+  @keyframes blink {
+    50% {
+      background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  }
+  @-moz-keyframes blink {
+    50% {
+      background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  }
+
 /* ################ Build robot ############################## */  
   .brain{
+    /* animation called blink; make it half a second long and reoeat it to infinity */
+    animation: blink .5s infinite;
+    -webkit-animation: blink .5s infinite;
+    -moz-animation: blink .5s infinite;
     /* background: radial-gradient(shape, centercolor, outercolor); shape=> can be circle or ellipse   color=> can include a numerical callour to size(pixels or percent) */
     background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
     background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5; 
