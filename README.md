@@ -159,6 +159,16 @@ This how ask one funtion to create multiple variable;
     var blue = Math.floor(Math.random() * 255);
 This says: when .color is clicked, generate a red value between 0 and 255, and a greeen value 0-255, and a blue value 0-255.
 Click it again Variables have a short attention spans. Every time I click the color button, the browsers runs the click script all over again, and I get brand new values.
+Next will take colors out of alert and stick them into the css
 
-    
 
+
+Part4:  Make and Modify CSS Styles with JavaScript.
+- Convert random numbers into brand-new CSS
+- Help the robot make some groovy mood lighting 
+- change the background color on the whole page
+
+Variables and Values; 
+This combines the 3 variables will into a brand-new variable called randomRGBA.
+*   var randomRGBA = 'rgba('+red+', '+green+', '+blue+', 1);
+randomRGBA is the RGBA value that will be put into CSS to change the screen's background color!
