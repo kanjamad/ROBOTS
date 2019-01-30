@@ -25,14 +25,30 @@
 
     </div>
 
-<!-- Make a button -->
-<button class="flash">laser eyes on/off</button> <!-- give the button a class name so JQuery can listen to it -->
+<!-- Build a button to control the robot's laser eyes -->
+<!-- give the button a class name so JQuery can listen to it -->
+<button class="flash">laser eyes on/off</button> 
 
-<!-- I want to say,"JQuery; when I hear a click on .flash class, toggle the class .laser on .brain"  -->
-<!-- When eyes button is clicked, toggle laser class on brain -->
+<!-- change the background color -->
+<button class="color">change color!</button>
+
+
 <script>
+    // I want to say,"JQuery; when I hear a click on .flash class, toggle the class .laser on .brain"
+    // When eyes button is clicked, toggle laser class on brain
     $(".flash").click(function() {
         $(".brain").toggleClass('laser');
+    });
+
+    // When color button is clicked...
+    $(".color").click(function() {
+    // assign each named color a random number 0-255
+    var red = Math.floor(Math.random() * 255);
+    var green = Math.floor(Math.random() * 255);
+    var blue = Math.floor(Math.random() * 255);
+    
+    //Display the three values in an alert window ( Just want to make sure everything is work)
+    alert(red + "," + green + "," + blue);
     });
 </script>
 

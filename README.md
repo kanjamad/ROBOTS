@@ -130,4 +130,35 @@ JQuery is a library full of helpful JavaScript. Instead of writing functions fro
 Include the JQuery library in the <head> HTML file https://www.w3schools.com/jquery/jquery_get_started.asp
 There's funtion in the JQuery library call toggleClass
 
+What's my funtion?;
+A funtion is a busy little machine that only does one thing. That thing will either be: it does something useful or ir returns a value.
+
+The next thing the robot will do is change the background color on the whole page. Every time I click a button, I'll get a new color. If I click the button really fast, it will look like flashing strobe lights at a dance club. Instead of writing one alternate body style and toggling it on or off, I do generate an infinite number of completely random colors!! with code!!! (My code will say: 1. when a button is clicked 2. generate a completely random color value 3. Then change the <body>'s background to the new color). Remember RGBA?; rgba(red, green, blue, alpha) The red, green and blue values are numbers between 0 and 255; the alpha scale runs from 0 to 1. Create a random RGBA value involes picking 3 random numbers ( between 0 and 255) then assigning 1 as the alpha value. 
+This is how ask JavaScript to provide a random number between 0 and 255.
+*       Math.floor(Math.random() *255)
+It works like this : Math.random creates a random number between 0 and 1.
+*       0 x 255 = 0
+*       1 x 255 = 255
+Multiply that random number by 255, I get a random number between 0 and 255.
+Example
+Math.floor is that rounds any value down to a whole number.
+0.5 x 225 = 127.5
+Math.floor(127.5) = 127
+other example
+0.831 x 255 = 211.905
+Math.floor(211.905) = 211
+
+- Step one;  I'll generate random whole numbers between 0 and 255 to make RGB values 
+- Step two; make JavaScript remember those numbers.
+
+How write one funtion that creates 3 variable - red, green,and blue - when the color button is click?
+This how ask one funtion to create multiple variable;    
+    $(".color").click(function() {
+    var red = Math.floor(Math.random() * 255);
+    var green = Math.floor(Math.random() * 255);
+    var blue = Math.floor(Math.random() * 255);
+This says: when .color is clicked, generate a red value between 0 and 255, and a greeen value 0-255, and a blue value 0-255.
+Click it again Variables have a short attention spans. Every time I click the color button, the browsers runs the click script all over again, and I get brand new values.
+
+    
 
