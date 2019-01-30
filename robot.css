@@ -42,12 +42,19 @@
     }
   }
 
-/* ################ Build robot ############################## */  
-  .brain{
+
+/* ################ special class for when the eye should be blinking ############################## */ 
+  .laser{
     /* animation called blink; make it half a second long and reoeat it to infinity */
     animation: blink .5s infinite;
     -webkit-animation: blink .5s infinite;
     -moz-animation: blink .5s infinite;
+  }
+
+
+
+/* ################ Build robot ############################## */  
+  .brain{
     /* background: radial-gradient(shape, centercolor, outercolor); shape=> can be circle or ellipse   color=> can include a numerical callour to size(pixels or percent) */
     background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
     background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5; 

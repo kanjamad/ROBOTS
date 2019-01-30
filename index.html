@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ROBOTS 🤖</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
     <link rel='stylesheet' href='robot.css'>
 </head>
@@ -24,8 +25,19 @@
 
     </div>
 
+<!-- Make a button -->
+<button class="flash">laser eyes on/off</button> <!-- give the button a class name so JQuery can listen to it -->
+
+<!-- I want to say,"JQuery; when I hear a click on .flash class, toggle the class .laser on .brain"  -->
+<!-- When eyes button is clicked, toggle laser class on brain -->
+<script>
+    $(".flash").click(function() {
+        $(".brain").toggleClass('laser');
+    });
+</script>
+
 
 <!-- This is the javaScript-->
-  <script type='text/javascript' src='robot.js'> </script>
+    <script type='text/javascript' src='robot.js'> </script>
 </body>
 </html>

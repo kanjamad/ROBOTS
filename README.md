@@ -11,7 +11,7 @@ To make an empty <div> visible , three things have to happen:
 (1)a width
 (2)a hight
 (3) either a background or a border color.
-I'm not going to put anything in there <div> be cause I'll use them to build a robot!
+I'm not going to put anything in there <div> because I'll use them to build a robot!
 Every shape in this robot is a shape that can create with nothing but a little bit of HTML and CSS.
 
 This robot is made from CSS and HTML.
@@ -48,13 +48,17 @@ First, just going to flesh out thr basics of the antenna's size, style and color
 Adding a transparent left and right border will give the antenna a trapezoid shape like the torso.
 But when I add a top border, something pretty neat happens!
 
+
+
+
+
 Part 2: Using CSS to position elements on a webpage
 Robot needs to rock the disco and its eyes should shoot lasers
 CSS positioning in depth, The idea of "in front of" and behind inCSS, Writhing CSS transforms to fip and rotate elements.
 
-1. Getting on the Grid
-We used margin-zero-auto to build the robot parts becarde learning borders and radial gradients and CSS positioning all in one go would melt most human brains.
-I need to animate the robot!, it has to be free to come and go  rool around the screen
+- Getting on the Grid
+Used margin-zero-auto to build the robot parts becarde learning borders and radial gradients and CSS positioning all in one go would melt most human brains.
+I need to animate the robot!, it has to be free to come and go  roll around the screen
 So, it's time to take the training wheels off
     - Going to kill the margin: 0 auto;
     - or delete the entire div style from CSS: height, width and margin.
@@ -80,11 +84,11 @@ HTML elements are positioned static by default.
 Static positioned elements are not affected by the top, bottom, left, and right properties.
 How things work if I don't apply any positioning at all!
 
-position: relative;
+- position: relative;
 An element with position: relative; is positioned relative to its normal position.
 Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.( relative: this allows me to move things around on the page.)
 
-properties: top, right, bottom left 
+- properties: top, right, bottom left 
 ( left, top) like (X, Y) => Use them to declare how far away something should be from the left side of, or from the top of, it's container in pixels.
 * Not use right, bottom : Want everything orented from the same direction.
 
@@ -101,13 +105,29 @@ Want to move the robot around on the screen
 * and wrap it around the four other div that are robot pieces.
 
 
-Arming the Cotbot:
+- Arming the Cotbot
 I could build the cotbot's arms with CSS shapes, but have other way easier tool that will give me the general shape of hands and shoulders.
 Specifcally by the lowercase letter j as styled with css and rendered in a google web font. https://fonts.google.com/specimen/Poller+One?selection.family=Poller+One
 
-Blink :
+- Blink 
 So, will use CSS animation(need to define and need to assign it) that will make it look like laser beams are shooting out of the Cotbot's eyes!
 And will animating .brain, to change the color of the eye gradient ehich is part of the background property.
 
+
+
+
+Part3: Creat and Controlling Animations with JavaScript
+1. Build a button to control the robot's laser eyes
+2. JavaScript will generates random color.
+Fire Cease Fire;
+- Let's create a special class for when the eye should be blinking, from the regular .brain
+Call it .laser, take all 2 animation styles out of .brain, and paste them into a new class called .laser
+That will stop the blinking for now, because no HTML element is assigned the .laser class yet.
+- Make a button; it will go inside and give the button a class name(flash) so JQuery can listen to it.
+The .flash button will be a toggle.(Toggle is just a fancy name to say turning something on/off)
+A toggle button will turn my new CSS class .laser -and animations attached to it on/off.
+JQuery is a library full of helpful JavaScript. Instead of writing functions from scratch, I can write the name of commonly used funtions that already exist in the library. 
+Include the JQuery library in the <head> HTML file https://www.w3schools.com/jquery/jquery_get_started.asp
+There's funtion in the JQuery library call toggleClass
 
 
